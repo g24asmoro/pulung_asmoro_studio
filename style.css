@@ -2012,10 +2012,18 @@ footer {
             -20px;
 
         height:
-            350px;
+            560px;
 
         min-height:
             auto;
+
+    }
+
+
+    .hero-photo img {
+
+        object-position:
+            center 40%;
 
     }
 
