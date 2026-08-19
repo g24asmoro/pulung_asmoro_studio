@@ -1293,6 +1293,254 @@ h2 span {
     object-fit:
         contain;
 
+    user-select:
+        none;
+
+    -webkit-user-drag:
+        none;
+
+}
+
+
+/* =====================================================
+   LIGHTBOX CAROUSEL
+===================================================== */
+
+.lightbox-slider {
+
+    overflow:
+        hidden;
+
+    max-width:
+        90vw;
+
+    max-height:
+        85vh;
+
+    cursor:
+        grab;
+
+}
+
+
+.lightbox-slider:active {
+
+    cursor:
+        grabbing;
+
+}
+
+
+.lightbox-track {
+
+    display:
+        flex;
+
+    transition:
+        transform .4s cubic-bezier(.25,.46,.45,.94);
+
+    will-change:
+        transform;
+
+}
+
+
+.lightbox-track.dragging {
+
+    transition:
+        none;
+
+}
+
+
+.lightbox-slide {
+
+    min-width:
+        100%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        0 5px;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+.lightbox-slide img {
+
+    max-width:
+        90vw;
+
+    max-height:
+        85vh;
+
+    object-fit:
+        contain;
+
+    pointer-events:
+        none;
+
+    user-select:
+        none;
+
+    -webkit-user-drag:
+        none;
+
+}
+
+
+.lightbox-prev,
+.lightbox-next {
+
+    position:
+        absolute;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    background:
+        rgba(255,255,255,.08);
+
+    border:
+        1px solid rgba(255,255,255,.15);
+
+    color:
+        var(--white);
+
+    cursor:
+        pointer;
+
+    padding:
+        12px 10px;
+
+    border-radius:
+        8px;
+
+    z-index:
+        10;
+
+    opacity:
+        .7;
+
+    transition:
+        .3s;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+}
+
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+
+    opacity:
+        1;
+
+    background:
+        rgba(255,255,255,.15);
+
+}
+
+
+.lightbox-prev {
+
+    left:
+        16px;
+
+}
+
+
+.lightbox-next {
+
+    right:
+        16px;
+
+}
+
+
+.lightbox-dots {
+
+    position:
+        absolute;
+
+    bottom:
+        -32px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    display:
+        flex;
+
+    gap:
+        8px;
+
+    z-index:
+        10;
+
+}
+
+
+.lightbox-dot {
+
+    width:
+        10px;
+
+    height:
+        10px;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(255,255,255,.3);
+
+    border:
+        none;
+
+    cursor:
+        pointer;
+
+    padding:
+        0;
+
+    transition:
+        .3s;
+
+}
+
+
+.lightbox-dot.active {
+
+    background:
+        var(--white);
+
+    transform:
+        scale(1.2);
+
 }
 
 
@@ -2192,6 +2440,39 @@ footer {
 
         gap:
             10px;
+
+    }
+
+
+    .lightbox-prev,
+    .lightbox-next {
+
+        padding:
+            8px 6px;
+
+    }
+
+
+    .lightbox-prev {
+
+        left:
+            8px;
+
+    }
+
+
+    .lightbox-next {
+
+        right:
+            8px;
+
+    }
+
+
+    .lightbox-slide img {
+
+        max-width:
+            95vw;
 
     }
 

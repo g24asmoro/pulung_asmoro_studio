@@ -294,7 +294,7 @@
 
         <article class="work-item"
                  data-action="lightbox"
-                 data-src="assets/desain-1.jpg">
+                 data-images='["assets/desain-1.jpg","assets/desain-2.jpg","assets/desain-3.jpg","assets/desain-4.jpg","assets/desain-5.jpg","assets/desain-6.jpg","assets/desain-7.jpg"]'>
 
             <div class="work-image">
 
@@ -313,14 +313,14 @@
                     </span>
 
                     <h3>
-                        Hari Pahlawan Nasional (BA-RA Nurul Auladi)
+                        Flyer & Poster (BA-RA Nurul Auladi)
                     </h3>
 
                 </div>
 
 
                 <span class="work-year">
-                    2026
+                    2025-2026
                 </span>
 
             </div>
@@ -391,7 +391,7 @@
                     </span>
 
                     <h3>
-                        Pelepasan & Gebyar Kreativitas (Nurul Auladi)
+                        Pelepasan Siswa (Nurul Auladi)
                     </h3>
 
                 </div>
@@ -411,12 +411,12 @@
 
         <article class="work-item"
                  data-action="lightbox"
-                 data-src="assets/foto-4.jpg">
+                 data-images='["assets/foto-1.jpg","assets/foto-2.jpg","assets/foto-3.jpg"]'>
 
             <div class="work-image">
 
-                <img src="assets/foto-4.jpg"
-                alt="Foto 4">
+                <img src="assets/foto-1.jpg"
+                alt="Foto 1">
 
             </div>
 
@@ -448,12 +448,12 @@
 
         <article class="work-item"
                  data-action="lightbox"
-                 data-src="assets/logo-5.jpg">
+                 data-images='["assets/logo-1.jpg","assets/logo-2.png","assets/logo-3.png"]'>
 
             <div class="work-image">
 
-                <img src="assets/logo-5.jpg"
-                     alt="Logo 5">
+                <img src="assets/logo-1.jpg"
+                     alt="Logo 1">
 
             </div>
 
@@ -467,7 +467,7 @@
                     </span>
 
                     <h3>
-                        Rumah Ngaji (Al Fitroh)
+                        Logo Lembaga dan Acara
                     </h3>
 
                 </div>
@@ -677,6 +677,7 @@
 
                     <p>
                         Computer Troubleshooting /
+                        Basic Coding /
                         IT Support /
                         Microsoft Office
                     </p>
@@ -885,9 +886,29 @@
 
         </button>
 
-        <img src=""
-             alt=""
-             id="lightboxImg">
+        <div class="lightbox-slider" id="lightboxSlider">
+
+            <div class="lightbox-track" id="lightboxTrack"></div>
+
+        </div>
+
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+
+        </button>
+
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+
+        </button>
+
+        <div class="lightbox-dots" id="lightboxDots"></div>
 
     </div>
 
