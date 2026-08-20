@@ -1576,6 +1576,9 @@ h2 span {
     transition:
         .3s;
 
+    touch-action:
+        manipulation;
+
 }
 
 
@@ -2597,7 +2600,10 @@ footer {
             50%;
 
         padding:
-            10px;
+            14px;
+
+        z-index:
+            20;
 
     }
 

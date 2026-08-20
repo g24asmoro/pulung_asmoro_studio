@@ -373,4 +373,11 @@ document.querySelectorAll(".work-item[data-action]").forEach(item => {
 
 lightboxClose.addEventListener("click", closeLightbox);
 
+lightboxClose.addEventListener("touchend", (e) => {
+
+    e.preventDefault();
+    closeLightbox();
+
+});
+
 lightbox.querySelector(".lightbox-overlay").addEventListener("click", closeLightbox);
